@@ -16,10 +16,13 @@ def zad_1():
 
 
 def zad_2():
-    print("********************")
-    print("*                  *")
-    print("*                  *")
-    print("********************")
+    for a in range(0, 3):
+        if(a % 2 == 0):
+            print("********************")
+        else:
+            print("*                  *")
+            print("*                  *")
+
     print("\n")
 
 
