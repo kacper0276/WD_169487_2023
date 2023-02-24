@@ -8,10 +8,12 @@ nazwisko = 'Nie'
 full_name = "Tak 'Nie'"
 print(imie,nazwisko,sep="")
 
+
 def zad_1():
     for a in range(0, 4):
         print("********************")
     print("\n")
+
 
 def zad_2():
     print("********************")
@@ -20,10 +22,12 @@ def zad_2():
     print("********************")
     print("\n")
 
+
 def zad_3():
     for a in range(1, 5):
         print("*"*a)
     print("\n")
+
 
 def zad_4():
     a = (512 - 282)
@@ -31,9 +35,11 @@ def zad_4():
     c = a / b
     print(c, "\n")
 
+
 def zad_5(x):
     print(x*1, x*2, x*3, x*4, x*5, sep="---")
     print("\n")
+
 
 def zad_6():
     x = "Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle poligraficznym "\
@@ -42,15 +48,18 @@ def zad_6():
         "Spopularyzował się w latach 60. XX w. wraz z publikacją arkuszy Letrasetu, zawierających fragmenty Lorem Ipsum," \
         "a ostatnio z zawierającym różne wersje Lorem Ipsum oprogramowaniem przeznaczonym do realizacji druków na komputerach osobistych, jak Aldus PageMaker"
 
+
 def zad_7():
     a = input("Podaj pierwszą wartość ")
     b = input("Podaj drugą wartość ")
     print("Wynik to {}".format(int(a)*int(b)))
     print("\n")
 
+
 def zad_8():
     a = input("Podaj wartość w kilogramach ")
     print("Twoja wartość w funtach to: {}".format( int(a)*2.2 ))
+
 
 zad_1()
 
