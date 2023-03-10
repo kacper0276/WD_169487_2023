@@ -2,6 +2,9 @@ import math
 
 
 def printLetterA(a):
+    if a % 2 == 0:
+        a = a + 1
+    
     spaces = a - 1
     spaces_between = 0
     for i in range(a):
