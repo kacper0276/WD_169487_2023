@@ -26,5 +26,4 @@ def fibonacci(n):
         return tablica.reshape(5,5)
 
 
-# Driver Program
 print(fibonacci(25))
