@@ -47,8 +47,11 @@ def zad_7(df):
 
 
 def zad_8(df):
-    result = df.groupby(['Imie', 'Rok', 'Liczba'], as_index=False)['Liczba'].max()
-    print(result)
+    data = df.groupby(['Rok', 'Imie'], as_index=False).agg({"Liczba": "sum"})
+    data = data.reset_index(drop=True)
+    df2 = data.groupby('Rok')["Liczba"].nlargest(2)
+    common = data.merge(df2, on=['Rok', 'Liczba']) # merge to część wspólna
+    print(common)
 
 
 dfmain = pd.read_excel('data/imiona.xlsx')
@@ -75,4 +78,4 @@ dfmain = pd.read_excel('data/imiona.xlsx')
 # zad_7(dfmain)
 
 # Podpunkt h
-zad_8(dfmain)
+# zad_8(dfmain)
