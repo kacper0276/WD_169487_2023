@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 
 data = pd.read_csv("data/zamowienia.csv", sep=";")
 
-pogrupowane = data.groupby(by="Sprzedawca").agg({"Utarg": "sum"}).apply(list)
+pogrupowane = data.groupby(by="Sprzedawca").agg({"Utarg": "count"}).apply(list)
 df = pogrupowane.reset_index()
 sprzedawcy = df["Sprzedawca"]
 suma = df["Utarg"]
